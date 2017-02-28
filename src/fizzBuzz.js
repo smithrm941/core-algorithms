@@ -1,6 +1,6 @@
 export default function fizzBuzz(){
   var array = [];
-    for (var i = 1; i < num + 1; i++){
+    for (var i = 1; i < 101; i++){
       array.push(i);
     }
     for (var i = 0; i<array.length; i++){
