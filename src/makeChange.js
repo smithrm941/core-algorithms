@@ -5,7 +5,7 @@ export default function makeChange({price, amountGiven}) {
     nickels: 0,
     pennies: 0
   }
-  const totalChange = amountGiven - price;
+  
   var difference = amountGiven - price;
     if(difference > 24){
       change.quarters = Math.floor(difference/25);
