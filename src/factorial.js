@@ -4,13 +4,10 @@ export default function factorial(num){
     while(num > 0){
       array.push(num);
         num--;}
-    var factorialOfNum = array.reduce(function(a,b){return a*b;});
-    return factorialOfNum;
+    return array.reduce(function(a,b){return a*b;});
   }else if(num === 0){
-    factorialOfNum = 1;
-    return factorialOfNum;
+    return 1;
   }else{
-    factorialOfNum = 'Invalid input';
-    return factorialOfNum;
+    return 'Invalid input';
   }
 }
