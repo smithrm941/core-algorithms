@@ -17,4 +17,5 @@ describe('setIntersection()', function(){
     expect(setIntersection(1, 'z')).to.equal('One or more inputs invalid')
     expect(setIntersection([1, 2, 3], 1)).to.equal('One or more inputs invalid')
   })
+
 })
