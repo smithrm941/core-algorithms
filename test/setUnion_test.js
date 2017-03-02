@@ -12,7 +12,7 @@ describe('setUnion()', function(){
     expect(setUnion(['dog', 'cat', 'cow', 'panda'], ['horse', 'cat', 'panda', 'rock'])).to.deep.equal(['dog', 'cat', 'cow', 'panda', 'horse', 'rock'])
   })
 
-  it('should return undefined if any argument is not a set', function(){
+  it('should return error message if any argument is not a set', function(){
     expect(setUnion(1, 'z')).to.equal('One or more inputs invalid')
   })
 })
