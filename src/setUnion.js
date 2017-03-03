@@ -1,12 +1,14 @@
-export default function setUnion(a, b){
-  if (Array.isArray(a) && Array.isArray(b)){
-    for (var i = 0; i < b.length; i++){
-      if (a.includes(b[i]) === false){
-        a.push(b[i]);
+export default function setUnion(set1, set2) {
+  if ( Array.isArray(set1) && Array.isArray(set2) ) {
+    var union = set1;
+    for (var i = 0; i < set2.length; i++) {
+      var currentValue = set2[i];
+      if ( !union.includes(currentValue) ) {
+        union.push(currentValue);
       }
+    }
+    return union;
+  } else {
+    return 'One or more inputs invalid';
   }
-  return a;
-} else {
-  return 'One or more inputs invalid';
-}
 }
