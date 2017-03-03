@@ -11,7 +11,5 @@ export default function collatzConjecture(n){
      }
    }
     return array;
-  }else{
-    return undefined;
   }
- }
+}
