@@ -11,15 +11,15 @@ export default function bubbleSort(array){
   } else {
     return 'Please enter an array of numbers';
   }
-  sortingHat.forEach(function repeater(element){
+  sortingHat.forEach(function repeater(){
     for(var x = 0; x<sortingHat.length; x++){
-      while(sortingHat[x] > sortingHat[x+1]){
+      //while(sortingHat[x] > sortingHat[x+1]){
         if(sortingHat[x] > sortingHat[x+1]){
           var temp = sortingHat[x];
           sortingHat[x] = sortingHat[x+1];
           sortingHat[x+1] = temp;
         }
-      }
+      //}
     }
   });
   return sortingHat;
