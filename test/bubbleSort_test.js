@@ -6,7 +6,7 @@ describe('bubbleSort()', function(){
     expect(bubbleSort).to.be.a('function')
   })
 
-  it.only('should return an array of the same values but sorted', function(){
+  it('should return an array of the same values but sorted', function(){
     expect(bubbleSort([9, 7, 10, 3, 5])).to.deep.equal([3, 5, 7, 9, 10])
     expect(bubbleSort([1])).to.deep.equal([1])
     expect(bubbleSort([])).to.deep.equal([])
