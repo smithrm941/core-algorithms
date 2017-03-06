@@ -1,13 +1,9 @@
-export default function isPalindrome(inputString){
-
-  inputString = inputString.toLowerCase();
-  inputString = inputString.replace(/[^\w]|_/g, "");
-  var inputArray = inputString.split('');
-  inputArray.reverse();
-  var reverseString = inputArray.join('');
-  if (reverseString === inputString) {
-    return true;
-  } else {
-    return false;
-  }
+export default function isPalindrome(input){
+	if (typeof input ==='string'){
+		const alphaNumeric = input.toLowerCase().replace(/[^\w]|_/g, '')
+		const reverse = alphaNumeric.split('').reverse().join('')
+		return reverse === alphaNumeric
+	}else{
+		return 'Invalid input'
+	}
 }
